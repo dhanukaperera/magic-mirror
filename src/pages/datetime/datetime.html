@@ -1,0 +1,41 @@
+<!--
+  Generated template for the DatetimePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Date Time Settings</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item-group>
+      <ion-item-divider color="light">Time</ion-item-divider>
+    <ion-item>
+        <ion-toggle checked="true"></ion-toggle>
+        <ion-label >Display Clock</ion-label>
+    </ion-item>
+    <ion-item>
+        <ion-select [(ngModel)]="timeFormat">
+            <ion-option value="f">12 Hours</ion-option>
+            <ion-option value="m">24 Hours</ion-option>
+        </ion-select>
+        <ion-label >Time Format </ion-label>
+        </ion-item>
+    <ion-item>
+      <ion-toggle checked="true"></ion-toggle> 
+      <ion-label >Show Seconds</ion-label>
+    </ion-item>
+    <ion-item-divider color="light">Date</ion-item-divider>
+    <ion-item>
+        <ion-toggle checked="true"></ion-toggle>
+        <ion-label >Show Date</ion-label>
+    </ion-item>
+  </ion-item-group>
+    
+</ion-content>
