@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { DatetimePage } from '../../pages/datetime/datetime';
 import { WeatherPage } from '../../pages/weather/weather';
+import { TodoPage } from '../../pages/todo/todo';
 import { ComplimentsPage } from '../../pages/compliments/compliments';
 import { NewsfeedPage } from '../../pages/newsfeed/newsfeed';
 
@@ -29,6 +30,10 @@ export class HomePage {
 
   navToComplimentsPage(){
     this.navCtrl.push(ComplimentsPage);
+  }
+
+  navToTodoPage(){
+    this.navCtrl.push(TodoPage);
   }
 
 }
