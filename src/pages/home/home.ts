@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { DatetimePage } from '../../pages/datetime/datetime';
 import { WeatherPage } from '../../pages/weather/weather';
+import { ComplimentsPage } from '../../pages/compliments/compliments';
 import { NewsfeedPage } from '../../pages/newsfeed/newsfeed';
 
 @Component({
@@ -24,6 +25,10 @@ export class HomePage {
 
   navToWeatherPage(){
     this.navCtrl.push(WeatherPage);
+  }
+
+  navToComplimentsPage(){
+    this.navCtrl.push(ComplimentsPage);
   }
 
 }

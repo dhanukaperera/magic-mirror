@@ -8,6 +8,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { DatetimePage } from '../pages/datetime/datetime'
 import { WeatherPage } from '../pages/weather/weather';
+import { ComplimentsPage } from '../pages/compliments/compliments';
 import { NewsfeedPage } from '../pages/newsfeed/newsfeed';
 
 
@@ -16,6 +17,7 @@ import { NewsfeedPage } from '../pages/newsfeed/newsfeed';
     MyApp,
     HomePage,
     DatetimePage,
+    ComplimentsPage,
     NewsfeedPage,
     WeatherPage
   ],
@@ -28,6 +30,7 @@ import { NewsfeedPage } from '../pages/newsfeed/newsfeed';
     MyApp,
     HomePage,
     DatetimePage,
+    ComplimentsPage,
     NewsfeedPage,
     WeatherPage
   ],
