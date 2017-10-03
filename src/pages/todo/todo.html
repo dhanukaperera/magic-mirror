@@ -22,7 +22,7 @@
 
 <ion-content padding>
   <ion-list>
-    <ion-item *ngFor="let event of eventListRef$ | async">
+    <ion-item *ngFor="let event of eventListRef$ | async" (click)="selectEventItem(event)">
       <h2>{{event.name}}</h2>
       <h3>{{event.date}}</h3>
     </ion-item>
