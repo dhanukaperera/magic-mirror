@@ -7,12 +7,14 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { DatetimePage } from '../pages/datetime/datetime'
+import { NewsfeedPage } from '../pages/newsfeed/newsfeed';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    DatetimePage
+    DatetimePage,
+    NewsfeedPage
   ],
   imports: [
     BrowserModule,
@@ -22,7 +24,8 @@ import { DatetimePage } from '../pages/datetime/datetime'
   entryComponents: [
     MyApp,
     HomePage,
-    DatetimePage
+    DatetimePage,
+    NewsfeedPage
   ],
   providers: [
     StatusBar,

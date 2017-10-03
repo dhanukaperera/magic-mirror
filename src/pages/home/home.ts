@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { DatetimePage } from '../../pages/datetime/datetime'
+import { DatetimePage } from '../../pages/datetime/datetime';
+import { NewsfeedPage } from '../../pages/newsfeed/newsfeed';
 
 @Component({
   selector: 'page-home',
@@ -14,5 +15,9 @@ export class HomePage {
 
   navToDateTimePage(){
    this.navCtrl.push(DatetimePage);
+  }
+
+  navToNewsFeedPage(){
+    this.navCtrl.push(NewsfeedPage);
   }
 }
