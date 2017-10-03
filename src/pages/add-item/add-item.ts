@@ -1,19 +1,17 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-/**
- * Generated class for the AddItemPage page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
+import { EventItem } from '../../models/event-item-interface';
 
-@IonicPage()
+
+
 @Component({
   selector: 'page-add-item',
   templateUrl: 'add-item.html',
 })
 export class AddItemPage {
+
+  eventItem = {} as EventItem;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -22,4 +20,7 @@ export class AddItemPage {
     console.log('ionViewDidLoad AddItemPage');
   }
 
+  addEventItem(eventItem: EventItem){
+    console.log(eventItem);
+  }
 }
