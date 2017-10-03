@@ -7,12 +7,29 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>compliments</ion-title>
+    <ion-title>Compliments Settings</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-
+    <ion-item-group>
+        <ion-item>
+            <ion-toggle display="true"></ion-toggle>
+            <ion-label>Display Compliments</ion-label>
+          </ion-item>
+          <ion-item>
+              <ion-label fixed>Your Name</ion-label>
+              <ion-input type="text"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label fixed>Message</ion-label>
+              <ion-input type="text"></ion-input>
+          </ion-item>
+    </ion-item-group>
+    <br>
+    <div>
+        <button ion-button full>Save</button>
+    </div>
 </ion-content>
