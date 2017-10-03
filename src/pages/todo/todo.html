@@ -6,9 +6,16 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>todo</ion-title>
-  </ion-navbar>
+    <ion-header>
+          <ion-navbar color="primary">
+            <ion-title>Todo</ion-title>
+              <ion-buttons end>
+                <button ion-button icon-only (click)="navToAddItemPage()">
+                  <ion-icon name="add"></ion-icon>
+                </button>
+              </ion-buttons>
+           </ion-navbar>
+        </ion-header>
 
 </ion-header>
 

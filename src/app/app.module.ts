@@ -9,6 +9,7 @@ import { HomePage } from '../pages/home/home';
 import { DatetimePage } from '../pages/datetime/datetime'
 import { WeatherPage } from '../pages/weather/weather';
 import { TodoPage } from '../pages/todo/todo';
+import { AddItemPage } from '../pages/add-item/add-item';
 import { ComplimentsPage } from '../pages/compliments/compliments';
 import { NewsfeedPage } from '../pages/newsfeed/newsfeed';
 
@@ -20,6 +21,7 @@ import { NewsfeedPage } from '../pages/newsfeed/newsfeed';
     DatetimePage,
     ComplimentsPage,
     TodoPage,
+    AddItemPage,
     NewsfeedPage,
     WeatherPage
   ],
@@ -34,6 +36,7 @@ import { NewsfeedPage } from '../pages/newsfeed/newsfeed';
     DatetimePage,
     ComplimentsPage,
     TodoPage,
+    AddItemPage,
     NewsfeedPage,
     WeatherPage
   ],

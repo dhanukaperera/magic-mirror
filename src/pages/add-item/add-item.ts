@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { AddItemPage } from '../../pages/add-item/add-item';
+
 /**
- * Generated class for the TodoPage page.
+ * Generated class for the AddItemPage page.
  *
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
@@ -10,19 +10,16 @@ import { AddItemPage } from '../../pages/add-item/add-item';
 
 @IonicPage()
 @Component({
-  selector: 'page-todo',
-  templateUrl: 'todo.html',
+  selector: 'page-add-item',
+  templateUrl: 'add-item.html',
 })
-export class TodoPage {
+export class AddItemPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad TodoPage');
+    console.log('ionViewDidLoad AddItemPage');
   }
 
-  navToAddItemPage(){
-    this.navCtrl.push(AddItemPage);
-  }
 }
