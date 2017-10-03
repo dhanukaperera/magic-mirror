@@ -15,6 +15,11 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class NewsfeedPage {
 
+  private display: boolean;
+  private sortBy: string;
+  private source: string;
+  private interval: string;
+  
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 

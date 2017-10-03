@@ -7,12 +7,57 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>newsfeed</ion-title>
+    <ion-title>News Feed Settings</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+  <ion-item-group>
 
+    <ion-item>
+      <ion-toggle display="true"></ion-toggle>
+      <ion-label>Display News Feed</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-select [(ngModel)]="sortBy">
+        <ion-option value="t">Top</ion-option>
+        <ion-option value="l">Latest</ion-option>
+        <ion-option value="p">Popular</ion-option>
+      </ion-select>
+      <ion-label>Sort By </ion-label>
+    </ion-item>
+
+    <ion-item>
+        <ion-select [(ngModel)]="source">
+          <ion-option value="1">Al Jazeera</ion-option>
+          <ion-option value="2">BBC News</ion-option>
+          <ion-option value="3">BBC Sport </ion-option>
+          <ion-option value="4">Business Insider</ion-option>
+          <ion-option value="5">Buzzfeed</ion-option>
+          <ion-option value="6">CNN</ion-option>
+          <ion-option value="7">Daily Mail</ion-option>
+          <ion-option value="8">ESPN</ion-option>
+          <ion-option value="9">Focus</ion-option>
+          <ion-option value="10">Google News</ion-option>
+          <ion-option value="11">New Scientist</ion-option>
+          <ion-option value="12">WSJ</ion-option>
+          <ion-option value="13">Time</ion-option>
+          <ion-option value="14">The Verge </ion-option>
+        </ion-select>
+        <ion-label>Select News Source</ion-label>
+      </ion-item>
+
+      <ion-item>
+          <ion-select [(ngModel)]="interval">
+            <ion-option value="1">1 hours</ion-option>
+            <ion-option value="2">2 hours</ion-option>
+            <ion-option value="3">3 hours</ion-option>
+            <ion-option value="f">6 hours</ion-option>
+            <ion-option value="4">12 hours</ion-option>
+          </ion-select>
+          <ion-label>Refresh Interval</ion-label>
+        </ion-item>
+  </ion-item-group>
 </ion-content>
