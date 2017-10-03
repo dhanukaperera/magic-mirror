@@ -1,21 +1,20 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AddItemPage } from '../../pages/add-item/add-item';
-/**
- * Generated class for the TodoPage page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
-
-@IonicPage()
+import { FirebaseListObservable, AngularFireDatabase } from 'angularfire2/database';
+import { EventItem } from '../../models/event-item-interface';
 @Component({
   selector: 'page-todo',
   templateUrl: 'todo.html',
 })
 export class TodoPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  eventListRef$: FirebaseListObservable<EventItem[]>;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, private database: AngularFireDatabase) {
+    this.eventListRef$ = this.database.list('/db/events/');
+   
+    
   }
 
   ionViewDidLoad() {
