@@ -3,6 +3,8 @@ import { IonicPage, NavController, NavParams,ActionSheetController } from 'ionic
 import { AddItemPage } from '../../pages/add-item/add-item';
 import { FirebaseListObservable, AngularFireDatabase } from 'angularfire2/database';
 import { EventItem } from '../../models/event-item-interface';
+import { EditEventPage } from '../../pages/edit-event/edit-event';
+
 @Component({
   selector: 'page-todo',
   templateUrl: 'todo.html',
@@ -33,6 +35,8 @@ export class TodoPage {
           text:'Edit',
           handler: ()=>{
             // 
+            this.navCtrl.push(EditEventPage,{
+              eventItemId:eventItem.$key})
           }
         },
         {

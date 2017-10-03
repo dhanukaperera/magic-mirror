@@ -14,7 +14,7 @@ import { TodoPage } from '../pages/todo/todo';
 import { AddItemPage } from '../pages/add-item/add-item';
 import { ComplimentsPage } from '../pages/compliments/compliments';
 import { NewsfeedPage } from '../pages/newsfeed/newsfeed';
-
+import { EditEventPage } from '../pages/edit-event/edit-event';
 import { FIREBASE_CRENDENTIALS } from './firebase.creadentials';
 
 @NgModule({
@@ -25,6 +25,7 @@ import { FIREBASE_CRENDENTIALS } from './firebase.creadentials';
     ComplimentsPage,
     TodoPage,
     AddItemPage,
+    EditEventPage,
     NewsfeedPage,
     WeatherPage
   ],
@@ -43,6 +44,7 @@ import { FIREBASE_CRENDENTIALS } from './firebase.creadentials';
     ComplimentsPage,
     TodoPage,
     AddItemPage,
+    EditEventPage,
     NewsfeedPage,
     WeatherPage
   ],
