@@ -7,12 +7,23 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>edit-event</ion-title>
+    <ion-title>{{eventItem.name}}</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-
-</ion-content>
+    <ion-list>
+        <ion-item>
+          <ion-label floating>Event Name</ion-label>
+          <ion-input type="text" [(ngModel)]="eventItem.name" ></ion-input>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>Event Date</ion-label>
+          <ion-datetime displayFormat="MMM/DD/YYYY" pickerFormat="MMM/DD/YYYY" min={{eventItem.date}} max="2020" [(ngModel)]="eventItem.date" ></ion-datetime>
+        </ion-item> <br>
+        <button ion-button full (click)="editShippingItem(eventItem)">Edit Event</button>
+      </ion-list>
+  </ion-content>

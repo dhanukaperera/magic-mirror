@@ -22,7 +22,7 @@
 
     <ion-item>
       <ion-label>Event Date</ion-label>
-      <ion-datetime displayFormat="MMM/DD/YYYY" pickerFormat="MMM/DD/YYYY" min="2017-01-01" max="2020" initialValue="2017-10-01" [(ngModel)]="eventItem.date"></ion-datetime>
+      <ion-datetime displayFormat="MMM/DD/YYYY" pickerFormat="MMM/DD/YYYY" min={{eventItem.date}} max="2020"  [(ngModel)]="eventItem.date"></ion-datetime>
     </ion-item> <br>
     <button ion-button full  (click)="addEventItem(eventItem)">Create Event</button>
   </ion-list>
