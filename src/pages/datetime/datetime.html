@@ -27,7 +27,7 @@
     </ion-item>
     <ion-item-divider color="light">Date</ion-item-divider>
     <ion-item>
-        <ion-toggle checked="true"></ion-toggle>
+        <ion-toggle [(ngModel)]="Date.display" (ionChange)="showDate(Date)"></ion-toggle>
         <ion-label >Show Date</ion-label>
     </ion-item>
   </ion-item-group>
