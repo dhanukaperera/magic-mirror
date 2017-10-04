@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams,ActionSheetController } from 'ionic-angular';
+import {  NavController, NavParams,ActionSheetController } from 'ionic-angular';
 import { AddItemPage } from '../../pages/add-item/add-item';
 import { FirebaseListObservable, AngularFireDatabase } from 'angularfire2/database';
 import { EventItem } from '../../models/event-item-interface';
