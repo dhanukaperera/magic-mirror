@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="primary">
     <ion-title>
       Magic Mirror
     </ion-title>
@@ -15,7 +15,7 @@
       <ion-icon name='md-time' item-start></ion-icon>
       Data and Time
       <ion-note item-end>
-        04 Options
+     
         
       </ion-note>
     </ion-item>
@@ -25,24 +25,24 @@
       <ion-label >
         Weather
       </ion-label>
-      <ion-icon name='rainy' item-start></ion-icon>
+      <ion-icon name='rainy' item-start color="secondary"></ion-icon>
     </ion-item>
 
     <ion-item (click)="navToTodoPage()">
-      <ion-icon name='checkbox' item-start></ion-icon>
-      Todo
+      <ion-icon name='calendar' item-start color="primary"></ion-icon>
+      Events
      
     </ion-item>
 
     <ion-item (click)="navToComplimentsPage()">
-      <ion-icon name='happy' item-start></ion-icon>
+      <ion-icon name='happy' item-start color="happy"></ion-icon>
       Compliments
       <ion-note item-end>
      
       </ion-note>
     </ion-item>
     <ion-item (click)="navToNewsFeedPage()">
-        <ion-icon name='paper' item-start></ion-icon>
+        <ion-icon name='paper' item-start item-start color="danger"></ion-icon>
         News Feed
         <ion-note item-end>
        
