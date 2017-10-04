@@ -22,18 +22,24 @@ export class DatetimePage {
       .ClockRef$
       .subscribe(clock => {
         this.Clock = clock;
-        // console.log(clock);
+        console.log(clock);
       });
   }
 
-  displayClock(clock : Clock_I) {
+  displayClock(clock : Clock_I) : void {
     //console.log(clock);
     this
       .ClockRef$
       .update(clock);
   }
 
-  
+  changeTimeFormat(clock: Clock_I):void{
+    this.ClockRef$.update(clock);
+  }  
+
+  displaySeconds(clock: Clock_I) : void {
+    this.ClockRef$.update(clock);
+  }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad DatetimePage');
