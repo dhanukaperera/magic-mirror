@@ -17,45 +17,45 @@
   <ion-item-group>
 
     <ion-item>
-      <ion-toggle display="true"></ion-toggle>
+      <ion-toggle [(ngModel)]="NewsFeed.display" (ionChange)="showNewsFeed(NewsFeed)"></ion-toggle>
       <ion-label>Display News Feed</ion-label>
     </ion-item>
     <ion-item>
-      <ion-select [(ngModel)]="sortBy">
-        <ion-option value="t">Top</ion-option>
-        <ion-option value="l">Latest</ion-option>
-        <ion-option value="p">Popular</ion-option>
+      <ion-select [(ngModel)]="NewsFeed.sortBy" (ionChange)="changeSortBy(NewsFeed)">
+        <ion-option value="top">Top</ion-option>
+        <ion-option value="latest">Latest</ion-option>
+        <ion-option value="popular">Popular</ion-option>
       </ion-select>
       <ion-label>Sort By </ion-label>
     </ion-item>
 
     <ion-item>
-        <ion-select [(ngModel)]="source">
-          <ion-option value="1">Al Jazeera</ion-option>
-          <ion-option value="2">BBC News</ion-option>
-          <ion-option value="3">BBC Sport </ion-option>
-          <ion-option value="4">Business Insider</ion-option>
-          <ion-option value="5">Buzzfeed</ion-option>
-          <ion-option value="6">CNN</ion-option>
-          <ion-option value="7">Daily Mail</ion-option>
-          <ion-option value="8">ESPN</ion-option>
-          <ion-option value="9">Focus</ion-option>
-          <ion-option value="10">Google News</ion-option>
-          <ion-option value="11">New Scientist</ion-option>
-          <ion-option value="12">WSJ</ion-option>
-          <ion-option value="13">Time</ion-option>
-          <ion-option value="14">The Verge </ion-option>
+        <ion-select [(ngModel)]="NewsFeed.source" (ionChange)="changeSortBy(NewsFeed)">
+          <ion-option value="al-jazeera-english">Al Jazeera</ion-option>
+          <ion-option value="bbc-news">BBC News</ion-option>
+          <ion-option value="bbc-sport">BBC Sport </ion-option>
+          <ion-option value="business-insider">Business Insider</ion-option>
+          <ion-option value="buzzfeed">Buzzfeed</ion-option>
+          <ion-option value="cnn">CNN</ion-option>
+          <ion-option value="daily-mail">Daily Mail</ion-option>
+          <ion-option value="espn">ESPN</ion-option>
+          <ion-option value="focus">Focus</ion-option>
+          <ion-option value="google-news">Google News</ion-option>
+          <ion-option value="new-scientist">New Scientist</ion-option>
+          <ion-option value="the-wall-street-journal">WSJ</ion-option>
+          <ion-option value="time">Time</ion-option>
+          <ion-option value="the-verge">The Verge </ion-option>
         </ion-select>
         <ion-label>Select News Source</ion-label>
       </ion-item>
 
       <ion-item>
-          <ion-select [(ngModel)]="interval">
-            <ion-option value="1">1 hours</ion-option>
-            <ion-option value="2">2 hours</ion-option>
-            <ion-option value="3">3 hours</ion-option>
-            <ion-option value="f">6 hours</ion-option>
-            <ion-option value="4">12 hours</ion-option>
+          <ion-select [(ngModel)]="NewsFeed.interval" (ionChange)="changeInterval(NewsFeed)">
+            <ion-option value={{3600000*1}}>1 hours</ion-option>
+            <ion-option value={{3600000*2}}>2 hours</ion-option>
+            <ion-option value={{3600000*3}}>3 hours</ion-option>
+            <ion-option value={{3600000*6}}>6 hours</ion-option>
+            <ion-option value={{3600000*12}}>12 hours</ion-option>
           </ion-select>
           <ion-label>Refresh Interval</ion-label>
         </ion-item>
