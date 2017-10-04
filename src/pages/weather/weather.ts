@@ -59,16 +59,12 @@ export class WeatherPage {
     .WeatherRef$
     .update(weather);
   }
-
-  displayWeatherInfo():void{
-   if(this.type === 'C'){
-
-   }else if (this.type === 'F') {
-     
-   }
-
+  ionViewWillLeave() {
+    this
+      .WeatherSubscription
+      .unsubscribe();
+  
   }
-
   ionViewDidLoad() {
     console.log('ionViewDidLoad WeatherPage');
   }
