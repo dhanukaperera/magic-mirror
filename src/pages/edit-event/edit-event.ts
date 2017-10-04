@@ -30,6 +30,7 @@ export class EditEventPage {
 
   editShippingItem(eventItem:EventItem){
     this.eventItemRef$.update(eventItem);
+    console.log(eventItem);
     this.navCtrl.pop();
   }
 
