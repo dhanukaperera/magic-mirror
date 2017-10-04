@@ -13,6 +13,51 @@
 </ion-header>
 
 
-<ion-content padding>
 
-</ion-content>
+  <ion-content padding>
+    <ion-item-group>
+      <ion-item>
+        <ion-toggle [(ngModel)]="Weather.display" (ionChange)="displayWeather(Weather)"></ion-toggle>
+        <ion-label>Display Weather</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-select [(ngModel)]="Weather.type" (ionChange)="changeUnit(Weather)">
+            <ion-option value="C">Celsius (C)</ion-option>
+            <ion-option value="F">Fahrenheit (F)</ion-option>
+        </ion-select>
+        <ion-label >Units </ion-label>
+        </ion-item>
+        <ion-item-divider color="light">Mirror Weather Info</ion-item-divider>
+
+        <ion-item *ngIf="display_C">
+          Temperature
+          <ion-note item-end>
+            {{temperature_C}} &#176; C
+          </ion-note>
+        </ion-item>
+
+        <ion-item *ngIf="display_F">
+          Temperature
+          <ion-note item-end>
+            {{temperature_F}} &#176; F
+          </ion-note>
+        </ion-item>
+
+        <ion-item >
+          Weather Condition
+          <ion-note item-end>
+           {{Weather.weather}}
+          </ion-note>
+        </ion-item>
+
+        <ion-item >
+          Mirror Location
+          <ion-note item-end>
+            {{Weather.ctiy}}
+          </ion-note>
+        </ion-item>
+
+
+    </ion-item-group>
+  </ion-content>
+
